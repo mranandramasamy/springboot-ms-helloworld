@@ -17,7 +17,7 @@ public class MessagesController {
 	
 	@GetMapping(value="/messages")
 	public List<Message> getMessages() {
-		System.out.println("Got into messages API");
+		System.out.println("Got into messages API !!");
 		List<Message> messages = messagesService.getMessagesList("zuck", "elon");
 		return messages;
 	}
